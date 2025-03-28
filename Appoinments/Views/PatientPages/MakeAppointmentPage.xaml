@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Appoinments.Views.PatientPages.MakeAppointmentPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="My Appointments" Clicked="OnMyAppointmentsClicked"
+                     IconImageSource="selectall.png"/>
+        
+        <ToolbarItem Text="Logout" Clicked="OnLogoutCliked"
+                     IconImageSource="logout.png"/>
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20"
+                         Spacing="20">
+            <Label Text="Make an appointment"
+               FontSize="26"
+               HorizontalOptions="Center"/>
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Select a doctor"/>
+                <Picker x:Name="DoctorPicker" Title="Select a doctor"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Select Date"/>
+                <DatePicker x:Name="AppointmentDatePicker" MinimumDate="{Binding TodayDate}"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Select Time"/>
+                <TimePicker x:Name="AppointmentTimePicker"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Notes"/>
+                <Editor x:Name="NotesEditor"
+                    Placeholder="Enter text here"
+                    HeightRequest="100"/>
+            </VerticalStackLayout>
+
+            <Button x:Name="OnScheduleAppointment" 
+                Text="Schedule Appointment"
+                Clicked="OnScheduledAppointmentClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

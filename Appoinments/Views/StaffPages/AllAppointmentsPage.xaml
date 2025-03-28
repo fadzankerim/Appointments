@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Appoinments.Views.StaffPages.AllAppointmentsPage"
+             >
+
+
+    <Grid RowDefinitions="Auto,Auto,*"
+          Padding="20">
+
+        <Label Text="All Appointments"
+               FontSize="26"
+               HorizontalOptions="Center"
+               Margin="0,-30,0,0"/>
+
+        <Image Source="allappointments.svg"               
+               WidthRequest="250"
+               Margin="0,20,0,0"/>
+
+        <StackLayout Grid.Row="1"
+                     Orientation="Horizontal"
+                     Margin="0,20,0,0"
+                     Spacing="10"
+                     Padding="20">
+            <Label Text="Filter by Status: "
+                   VerticalOptions="Center"/>
+            <Picker x:Name="StatusPicker"
+                    SelectedIndexChanged="OnStatusChanged"
+                    WidthRequest="100"
+                    SelectedIndex="0">
+                <Picker.Items>
+                    <x:String>All</x:String>
+                    <x:String>Scheduled</x:String>
+                    <x:String>Completed</x:String>
+                    <x:String>Cancelled</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+
+        <CollectionView x:Name="AppointmentsCollectionView"
+                        Grid.Row="2"
+                        Margin="0,20,0,0"
+                        EmptyView="No appointments found">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="0,0,0,10"
+                           Padding="15"
+                           BorderColor="LightGray">
+
+
+                        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" 
+                              ColumnDefinitions="*,Auto">
+
+                            <Label Text="{Binding DoctorName}"
+                                   FontSize="18"
+                                   FontAttributes="Bold"/>
+
+                            <Label Grid.Row="1"
+                                   Text="{Binding PatientName}"/>
+
+                            <Label Grid.Row="2"
+                                   Text="{Binding AppointmentDate , StringFormat='{0:dddd, MMMM d, yyyy}'}"/>
+
+                            <Label Grid.Row="3"
+                                   Text="{Binding AppointmentDate, StringFormat='{0:h:mm tt}'}"/>
+
+                            <Label Grid.Row="4"
+                                   Text="{Binding Status}" TextColor="{Binding StatusColor}"/>
+
+                            <VerticalStackLayout Grid.Column="1" Grid.RowSpan="5" VerticalOptions="Center" Spacing="10">
+                                <Button Text="Edit" Clicked="OnEditAppointmentClicked" CommandParameter="{Binding Id}" />
+                                <Button Text="Delete" Clicked="OnDeleteAppointmentClicked" CommandParameter="{Binding Id}" BackgroundColor="DarkRed" />
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            
+        </CollectionView>
+    </Grid>
+    
+</ContentPage>

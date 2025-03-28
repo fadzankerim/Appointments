@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Appoinments.Views.StaffPages.StaffEditAppointmentPage"
+             Title="StaffEditAppointmentPage">
+
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20"
+                             Spacing="20">
+            <Label Text="Edit Appointment"
+                   FontSize="26"
+                   HorizontalOptions="Center"/>
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Patient"/>
+                <Picker x:Name="PatientPicker"
+                        Title="Select a patient"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Doctor"/>
+                <Picker x:Name="DoctorPicker"
+                        Title="Select a doctor"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Status"/>
+                <Picker x:Name="StatusPicker"
+                        Title="Select Status">
+                    <Picker.Items>
+                        <x:String>Scheduled</x:String>
+                        <x:String>Completed</x:String>
+                        <x:String>Cancelled</x:String>
+                    </Picker.Items>
+                </Picker>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Date" />
+                <DatePicker x:Name="AppointmentDatePicker" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Time" />
+                <TimePicker x:Name="AppointmentTimePicker" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Notes" />
+                <Editor x:Name="NotesEditor" Placeholder="Enter any notes" HeightRequest="100" />
+            </VerticalStackLayout>
+
+            <Button Text="Save Changes" Clicked="OnSaveChangesClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+       
+    
+</ContentPage>

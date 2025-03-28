@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Appoinments.Views.PatientPages.PatientAppointmentsPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="New appointment"
+                     IconImageSource="button.png"
+                     x:Name="AddAppointment"
+                     Clicked="OnAddAppointmentClicked"/>
+        <ToolbarItem Text="Logout"
+                     IconImageSource="logout.png"
+                     x:Name="Logout"
+                     Clicked="OnLogoutClicked"/>
+    </ContentPage.ToolbarItems>
+
+    <Grid RowDefinitions="Auto,*"
+          Padding="20">
+
+        <Label Text="My Appointments"
+               FontSize="26"
+               HorizontalOptions="Center"/>
+
+        <CollectionView x:Name="ApointmentsCollectionView"
+                        Grid.Row="1"
+                        Margin="0,20,0,0"
+                        EmptyView="No appointments found">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="0,0,0,10"
+                           Padding="15"
+                           BorderColor="LightGray">
+                        <Grid RowDefinitions="Auto,Auto,Auto,Auto"
+                              ColumnDefinitions="*,Auto">
+                            <Label Text="{Binding DoctorName}"
+                                   FontSize="18"
+                                   FontAttributes="Bold"/>
+
+                            <Label Grid.Row="1" Text="{Binding AppointmentDate, StringFormat='{0:dddd,MMMM d, yyyy}'}"/>
+
+                            <Label Grid.Row="2" Text="{Binding AppointmentTime, StringFormat='{0:hh:mm tt}'}"/>
+
+                            <Label Grid.Row="3" Text="{Binding Status}" TextColor="{Binding StatusColor}"/>
+
+                            <HorizontalStackLayout Grid.Column="1"
+                                                   Grid.RowSpan="4"
+                                                   VerticalOptions="Center"
+                                                   Spacing="10">
+
+                                <Button Text="Edit" 
+                                        x:Name="EditButton"
+                                        Clicked="OnEditAppointmentClicked"
+                                        CommandParameter="{Binding Id}"/>
+
+                                <Button Text="Cancel" 
+                                        x:Name="CancelButton"
+                                        Clicked="OnCancelAppointmentClicked"
+                                        CommandParameter="{Binding Id}"
+                                        BackgroundColor="DarkRed"/>
+
+                            </HorizontalStackLayout>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            
+        </CollectionView>
+
+    </Grid>
+</ContentPage>

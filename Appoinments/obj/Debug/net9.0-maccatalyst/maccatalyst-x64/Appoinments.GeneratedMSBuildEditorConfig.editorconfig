@@ -1,0 +1,102 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
+build_property._MvvmToolkitIsUsingWindowsRuntimePack = false
+build_property.CsWinRTComponent = 
+build_property.CsWinRTAotOptimizerEnabled = 
+build_property.CsWinRTAotWarningLevel = 
+build_property.TargetFramework = net9.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Appoinments
+build_property.ProjectDir = E:\c#\Appoinments\Appoinments\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[E:/c\#/Appoinments/Appoinments/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appoinments.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[E:/c\#/Appoinments/Appoinments/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appoinments.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[E:/c\#/Appoinments/Appoinments/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appoinments.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[E:/c\#/Appoinments/Appoinments/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appoinments.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[E:/c\#/Appoinments/Appoinments/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appoinments.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[E:/c\#/Appoinments/Appoinments/Views/Auth/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appoinments.Views.Auth.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Auth\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Auth\LoginPage.xaml
+
+[E:/c\#/Appoinments/Appoinments/Views/Auth/RegistrationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appoinments.Views.Auth.RegistrationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Auth\RegistrationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Auth\RegistrationPage.xaml
+
+[E:/c\#/Appoinments/Appoinments/Views/PatientPages/EditAppointmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appoinments.Views.PatientPages.EditAppointmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PatientPages\EditAppointmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PatientPages\EditAppointmentPage.xaml
+
+[E:/c\#/Appoinments/Appoinments/Views/PatientPages/MakeAppointmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appoinments.Views.PatientPages.MakeAppointmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PatientPages\MakeAppointmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PatientPages\MakeAppointmentPage.xaml
+
+[E:/c\#/Appoinments/Appoinments/Views/PatientPages/PatientAppointmentsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appoinments.Views.PatientPages.PatientAppointmentsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PatientPages\PatientAppointmentsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PatientPages\PatientAppointmentsPage.xaml
+
+[E:/c\#/Appoinments/Appoinments/Views/StaffPages/AllAppointmentsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appoinments.Views.StaffPages.AllAppointmentsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\StaffPages\AllAppointmentsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\StaffPages\AllAppointmentsPage.xaml
+
+[E:/c\#/Appoinments/Appoinments/Views/StaffPages/StaffDashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appoinments.Views.StaffPages.StaffDashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\StaffPages\StaffDashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\StaffPages\StaffDashboardPage.xaml
+
+[E:/c\#/Appoinments/Appoinments/Views/StaffPages/StaffEditAppointmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appoinments.Views.StaffPages.StaffEditAppointmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\StaffPages\StaffEditAppointmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\StaffPages\StaffEditAppointmentPage.xaml
