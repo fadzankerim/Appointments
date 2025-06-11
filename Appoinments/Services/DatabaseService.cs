@@ -159,10 +159,14 @@ namespace Appoinments.Services
             }
         }
 
+        public async Task<List<Appointment>> GetAppointmentByDoctorIdAsync(int doctorId)
+        {
+            return await _database.Table<Appointment>().Where(a => a.DoctorId == doctorId).ToListAsync();
+        }
 
         public async Task<Appointment> GetAppointmentById(int appointmentId)
         {
-            return  await _database.Table<Appointment>().FirstOrDefaultAsync(a => a.Id == appointmentId);
+            return await _database.Table<Appointment>().FirstOrDefaultAsync(a => a.Id == appointmentId);
         }
 
         public Task<int> DeleteAppointmentAsync(Appointment appointment) 

@@ -1,43 +1,89 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Appoinments.Views.Auth.RegistrationPage">
-    
+             x:Class="Appoinments.Views.Auth.RegistrationPage"
+             BackgroundColor="#F9F9F9">
+
     <ScrollView>
-        <VerticalStackLayout Spacing="15" Padding="30">
-            <Label Text="Sign Up" FontSize="32" HorizontalOptions="Center" />
+        <VerticalStackLayout Spacing="20" Padding="30" VerticalOptions="Center">
 
-            <Label Text="Username" />
-            <Entry x:Name="UsernameEntry" Placeholder="Enter username" />
+            <Label Text="Create Account ✨" 
+                   FontSize="28" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#333" />
 
-            <Label Text="Email" />
-            <Entry x:Name="EmailEntry" Placeholder="Enter email" Keyboard="Email" />
+            <Frame HasShadow="False" BorderColor="#DDD" CornerRadius="12" Padding="15" BackgroundColor="White">
+                <VerticalStackLayout Spacing="15">
 
-            <Label Text="Password" />
-            <Entry x:Name="PasswordEntry" Placeholder="Enter password" IsPassword="True" />
+                    <Entry x:Name="UsernameEntry" 
+                           Placeholder="Username" 
+                           BackgroundColor="#FFF" 
+                           TextColor="#333" 
+                           />
 
-            <Label Text="Full Name" />
-            <Entry x:Name="NameEntry" Placeholder="Enter your full name" />
+                    <Entry x:Name="EmailEntry" 
+                           Placeholder="Email" 
+                           Keyboard="Email" 
+                           BackgroundColor="#FFF" 
+                           TextColor="#333" 
+                           />
 
-            <Label Text="Date of Birth" />
-            <DatePicker x:Name="DateOfBirthPicker" />
+                    <Entry x:Name="PasswordEntry" 
+                           Placeholder="Password" 
+                           IsPassword="True" 
+                           BackgroundColor="#FFF" 
+                           TextColor="#333" 
+                           />
 
-            <Label Text="Phone Number" />
-            <Entry x:Name="PhoneEntry" Placeholder="Enter phone number" Keyboard="Telephone" />
+                    <Entry x:Name="NameEntry" 
+                           Placeholder="Full Name" 
+                           BackgroundColor="#FFF" 
+                           TextColor="#333" 
+                           />
 
-            <Label Text="Address" />
-            <Editor x:Name="AddressEditor" Placeholder="Enter your address" HeightRequest="100" />
+                    <Label Text="Date of Birth" TextColor="#666" FontSize="14" />
+                    <DatePicker x:Name="DateOfBirthPicker" 
+                                TextColor="#333"
+                                BackgroundColor="#FFF" 
+                                Margin="0,0,0,10"/>
 
-            <Button Text="Register" Clicked="Register_Clicked" Margin="0,20,0,0" x:Name="Register"/>
+                    <Entry x:Name="PhoneEntry" 
+                           Placeholder="Phone Number" 
+                           Keyboard="Telephone" 
+                           BackgroundColor="#FFF" 
+                           TextColor="#333" 
+                           />
+
+                    <Editor x:Name="AddressEditor" 
+                            Placeholder="Address" 
+                            HeightRequest="80" 
+                            BackgroundColor="#FFF" 
+                            TextColor="#333" 
+                            />
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Register" 
+                    Clicked="Register_Clicked" 
+                    x:Name="Register"
+                    BackgroundColor="#2196F3" 
+                    TextColor="White" 
+                    CornerRadius="8"
+                    HeightRequest="50"
+                    FontAttributes="Bold" />
 
             <HorizontalStackLayout HorizontalOptions="Center">
-                <Label Text="Already have an account? " />
-                <Label Text="Login" TextColor="Blue" TextDecorations="Underline">
+                <Label Text="Already have an account?" TextColor="#666" />
+                <Label Text=" Login" TextColor="#4CAF50" FontAttributes="Bold">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="LoginTapped_Tapped" x:Name="LoginTapped"/>
                     </Label.GestureRecognizers>
                 </Label>
             </HorizontalStackLayout>
+
         </VerticalStackLayout>
     </ScrollView>
+
 </ContentPage>

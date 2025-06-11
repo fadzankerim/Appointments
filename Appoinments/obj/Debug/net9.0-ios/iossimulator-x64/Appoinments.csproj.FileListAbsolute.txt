@@ -269,6 +269,10 @@ E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@2x.png
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@3x.png
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\mauisplash.stamp
+E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\plus.png
+E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\button.png
+E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\selectall.png
+E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\logout.png
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
@@ -281,8 +285,6 @@ E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
-E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\plus.png
-E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\logout.png
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@3x.png
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@2x.png
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot.png
@@ -322,6 +324,7 @@ E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\Appoinments.
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\Appoinments.AssemblyInfoInputs.cache
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\Appoinments.AssemblyInfo.cs
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\Appoinments.csproj.CoreCompileInputs.cache
+E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\Appoinments.sourcelink.json
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\XamlC.stamp
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\Appoinme.911B867B.Up2Date
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\Appoinments.dll
@@ -329,5 +332,3 @@ E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\refint\Appoi
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\Appoinments.pdb
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\Appoinments.genruntimeconfig.cache
 E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\ref\Appoinments.dll
-E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\button.png
-E:\c#\Appoinments\Appoinments\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\selectall.png

@@ -92,13 +92,35 @@ public partial class MakeAppointmentPage : ContentPage
 				return;
 			}
 
+			var appointmentDate = AppointmentDatePicker.Date;
+			var appointmentTime = AppointmentTimePicker.Time;
 			var appoinmentDateTime = AppointmentDatePicker.Date.Add(AppointmentTimePicker.Time);
 
 			// validacija odabranog vremena
 
+			if(appointmentTime < new TimeSpan(8,0,0) || appointmentTime > new TimeSpan(19, 0, 0))
+			{
+				await DisplayAlert("Error", "Appointments can only be made between 08:00 and 19:00", "OK");
+				return;
+			}
+
 			if(appoinmentDateTime <= DateTime.Now)
 			{
 				await DisplayAlert("Error", "Please select a future date and time", "OK");
+				return;
+			}
+
+			//provjera da li postoji vec kreiran termin za tog doktora u to vrijeme
+
+			var existingAppointments = await App.Database.GetAppointmentByDoctorIdAsync(selectedDoctor.Id);
+
+			bool isConflict = existingAppointments.Any(a =>
+				a.AppointmentDate.Date == appoinmentDateTime.Date &&
+				a.AppointmentDate.TimeOfDay == appoinmentDateTime.TimeOfDay
+			);
+
+			if (isConflict) {
+				await DisplayAlert("Error", "The selected doctor already has an appointment at this time.", "OK");
 				return;
 			}
 
