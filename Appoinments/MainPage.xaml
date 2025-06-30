@@ -4,29 +4,43 @@
              x:Class="Appoinments.MainPage">
 
     <VerticalStackLayout 
-        Spacing="25" 
-        Padding="30" 
-        VerticalOptions="Center">
-        
-        <Image Source="welcomepage.svg" 
-               HeightRequest="300" 
-               HorizontalOptions="Center"/>
-        
+    Spacing="30" 
+    Padding="40,60"
+    VerticalOptions="Center"
+    HorizontalOptions="Center">
+
+        <Image Source="welcomepage.svg"
+           Aspect="AspectFit"
+           HeightRequest="250"
+           WidthRequest="250"
+           HorizontalOptions="Center"/>
+
         <Label Text="GP Assist" 
-               FontSize="32" 
-               HorizontalOptions="Center" />
-        
+           FontSize="36" 
+           FontAttributes="Bold"
+           TextColor="#333333"
+           HorizontalOptions="Center" />
+
         <Label Text="Your health is our priority" 
-               FontSize="18" 
-               HorizontalOptions="Center" />
-        
-        <Button x:Name="ContinueButton"
+           FontSize="18"
+           TextColor="#666666"
+           HorizontalOptions="Center" />
+
+        <Frame HasShadow="True"
+           Padding="0"
+           CornerRadius="12"
+           IsClippedToBounds="True"
+           WidthRequest="200"
+           HorizontalOptions="Center">
+            <Button x:Name="ContinueButton"
                 Text="Continue" 
-                SemanticProperties.Hint="Continue to Sing Up or Sing In"
-                Clicked="ContinueButton_Clicked"
-                HorizontalOptions="Fill" />
-        
-        
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="#2196F3"
+                HeightRequest="50"
+                Clicked="ContinueButton_Clicked"/>
+        </Frame>
+
     </VerticalStackLayout>
 
 </ContentPage>
